@@ -35,6 +35,10 @@ function a() {  // 获取用户基本信息
             }
         }
     })
+ 
+
+    // 点击资料 、更换头像 、 重置密码跳转对应的页面
+   
 }
 
 function b(data) {
@@ -44,6 +48,7 @@ function b(data) {
         $('.text-avatar').hide()
         $('.layui-nav-img').attr('src', data.user_pic).show()
     } else {
+        // name[0].toUpperCase()：将名字开头 大写
         $('.text-avatar').html(name[0].toUpperCase())
         $('.layui-nav-img').hide()
     }
