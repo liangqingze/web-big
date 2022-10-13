@@ -43,7 +43,7 @@ function a() {  // 获取用户基本信息
 
 function b(data) {
     var name = data.nickname || data.username
-    $('#welcome').html(name)
+    $('#welcome').html("欢迎&nbsp&nbsp"+name)
     if (data.user_pic !== null) {
         $('.text-avatar').hide()
         $('.layui-nav-img').attr('src', data.user_pic).show()
